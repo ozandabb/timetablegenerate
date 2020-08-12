@@ -1,13 +1,153 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.8rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  display: flex;
+  position: relative;
+}
+
+.app main {
+  padding:12px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: #F5F6F8 !important;
+}
+
+.form-label{
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+span.error{
+  font-size: 0.8rem;
+}
+.css-1pahdxg-control{
+  border-color: #F5F6F8 !important;
+}
+
+.error > .css-yk16xz-control {
+ border-color: var(--danger) !important;
+}
+.error > .css-1pahdxg-control {
+ border-color: var(--danger) !important;
+}
+.error > .css-1pahdxg-control:hover {
+ border-color: var(--danger) !important;
+}
+
+.error .css-1wa3eu0-placeholder {
+ color: var(--danger) !important;
+}
+
+.css-g1d714-ValueContainer{
+  padding : 10px 5px !important;
+}
+
+.css-1wa3eu0-placeholder{
+  font-size: 0.85rem !important;
+}
+
+.form-control.error {
+  border-color: var(--danger);
+  color: var(--danger);
+  font-weight: unset;
+}
+
+.error:focus {
+  outline: var(--danger) auto 2px !important;
+  box-shadow: none !important;
+  border-color: none !important;
+}
+
+.error::placeholder {
+  color: var(--danger) !important;
+  opacity: 1; /* Firefox */
+}
+
+.click {
+  cursor: pointer !important;
+}
+
+.customtable td {
+  font-size: 0.9rem;
+  color:  var(--secondary);
+}
+.pro-sidebar {
+  height: 100vh !important;
+}
+
+.pro-menu-item {
+  background-color:  #262626 !important;
+  font-size: 14px !important;
+  padding-top: 2px ;
+  font-weight: 500 !important;
+  padding-bottom: 2px ;
+}
+
+.pro-menu-item.active{
+  background-color:  #18A0FB !important;
+  color : white !important;
+}
+
+.pro-inner-list-item {
+  background-color:  #262626 !important;
+  padding-left: 0px !important ;
+}
+
+.pro-sidebar .pro-menu {
+  padding-top: 0px !important;
+}
+
+.line-hight-1{
+  line-height: 1.1rem !important;
+}
+
+.text-header{
+  color: #545454 !important;
+}
+
+.text-dark2{
+  color: #545454 !important;
+}
+
+.font-08 {
+  font-size: 0.8rem !important;
+}
+
+.pro-inner-item::before{
+  content: unset !important;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item{
+  padding : 3px 35px 3px 7px !important;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item .pro-inner-item {
+  padding : 8px 35px 8px 20px !important;
+}
+
+.pro-sidebar .pro-menu.shaped .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
+  background-color:  unset !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #6d6d6d; 
 }
