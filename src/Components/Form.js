@@ -41,6 +41,7 @@ const MultiFormSelect =  props => {
     <label className={`${props.error && 'text-danger'} form-label`}>{props.label}</label>
        
     <Select placeholder={props.placeholder ? props.placeholder : ''}
+     onChange={props.onChange}
      options={props.options}  isMulti className={`${props.error && 'error'} form-multi`} />
 
     { props.error && <span className="error small text-danger">
