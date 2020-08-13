@@ -28,7 +28,7 @@ class DeleteWorkingDays extends React.Component {
             <div className="row" >
                 <div className="col-12 shadow-sm rounded bg-white mt-1" >
                     <h6 className="text-header py-3 mb-0 font-weight-bold line-hight-1">Delete Working Days Group<br></br>
-                    <span className="text-muted small">You can delete working day groups</span></h6>
+                    <span className="text-muted small">working day group delete confirmation</span></h6>
                 </div>
                 <div className="col-12 shadow-sm rounded bg-white mt-3 pb-1" >
     

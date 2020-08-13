@@ -3,7 +3,9 @@ import Dashboard from '../Dashboard';
 //WorkingDays
 import WorkingDaysList from '../WorkingDays/WorkingDaysList';
 import AddWorkingDays from '../WorkingDays/AddWorkingDays';
+import AddTimeslot from '../WorkingDays/AddTimeslot';
 import DeleteWorkingDays from '../WorkingDays/DeleteWorkingDays';
+import DeleteTimeslot from '../WorkingDays/DeleteTimeslot';
 import TimeslotsList from '../WorkingDays/TimeslotsList';
 
 //Lecturers
@@ -32,9 +34,21 @@ let routes = [
     exact: true,
   },
   {
+    path: "/workingdays/timeslots/add",
+    name: "Add Timeslots",
+    component: AddTimeslot,
+    exact: true,
+  },
+  {
     path: "/workingdays/delete",
     name: "Delete Working Days",
     component: DeleteWorkingDays,
+    exact: true,
+  },
+  {
+    path: "/workingdays/timeslots/delete",
+    name: "Delete Timeslot",
+    component: DeleteTimeslot,
     exact: true,
   },
   {
