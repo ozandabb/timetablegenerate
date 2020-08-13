@@ -22,6 +22,9 @@ body {
   font-weight: 500;
   color: var(--gray);
 }
+.w-20 {
+  width: 20% !important;
+}
 
 span.error{
   font-size: 0.8rem;

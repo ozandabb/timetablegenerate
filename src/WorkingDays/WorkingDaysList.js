@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from '../Components/Sidebar'
-
+import {Link} from 'react-router-dom'
 class WorkingDays extends React.Component {
 
   render(){
@@ -14,7 +14,7 @@ class WorkingDays extends React.Component {
                 <h6 className="text-header py-3 mb-0 font-weight-bold line-hight-1">Working Days Groups<br></br>
                 <span className="text-muted small">Details about groups</span></h6>
             </div>
-            <div className="col-12 shadow-sm rounded bg-white mt-3" >
+            <div className="col-12 shadow-sm rounded bg-white mt-2" >
                 <table class="table borderless customtable">
                     <thead>
                         <tr>
@@ -31,9 +31,12 @@ class WorkingDays extends React.Component {
                             <td>01</td>
                             <td>Weekend</td>
                             <td>2 Days</td>
-                            <td>Saturday, Sunday</td>
-                            <td>08-30 : 20:30</td>
-                            <td><span className="badge badge-info rounded-0 bg-white text-primary border border-info click font-weight-bold ">More Info</span></td>
+                            <td className="w-25">Saturday , Sunday</td>
+                            <td>08:30 : 20:30</td>
+                            <td><Link to={'/workingdays/timeslots'}>
+                                <span className="badge badge-info rounded-0 bg-white text-primary border border-info click font-weight-bold ">More Info</span>
+                                </Link>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
