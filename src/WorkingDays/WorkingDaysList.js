@@ -33,7 +33,7 @@ class WorkingDays extends React.Component {
                             <td>2 Days</td>
                             <td>Saturday, Sunday</td>
                             <td>08-30 : 20:30</td>
-                            <td><span className="badge badge-info rounded-0 bg-white text-primary click font-weight-bold ">More Info</span></td>
+                            <td><span className="badge badge-info rounded-0 bg-white text-primary border border-info click font-weight-bold ">More Info</span></td>
                         </tr>
                     </tbody>
                 </table>
