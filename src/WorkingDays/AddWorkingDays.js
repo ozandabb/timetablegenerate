@@ -39,7 +39,9 @@ class AddWorkingDays extends React.Component {
     }
 
     handleMultiselect = (newValue) => {
-        this.setState({ days: newValue == null ? [] : newValue });
+        this.setState({ days: newValue == null ? [] : newValue , 
+            errors : { ...this.state.errors , days : !(newValue && newValue.length > 0 ) , days_count : !(newValue && newValue.length > 0 )  } ,
+            days_count : newValue && newValue.length > 0 ?  newValue.length.toString() : 'NONE' });
     };
 
     onFormSubmit = (e) => {
