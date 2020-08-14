@@ -35,6 +35,17 @@ const Sidebar = ({activemenu, submenu}) => {
         <MenuItem active={true}>Days Groups</MenuItem>
       </SubMenu>
 
+      <SubMenu  defaultOpen={activemenu === 'STUDENT'} title="Student" icon={<FontAwesomeIcon icon={faAddressBook} />}>
+        <MenuItem 
+            active={submenu === 'STUDENT_TB_LIST'} >
+            Timetable List<Link to="/student/student_tb_list" />
+        </MenuItem>
+        <MenuItem active={submenu === 'ADD_STUDENT_TIMETABLE'}>
+          Add Timetable<Link to="/student/add_timetable" />
+        </MenuItem>
+        <MenuItem active={submenu === 'ADD_TIMESLOTS'}>Add Timeslots</MenuItem>
+      </SubMenu>
+
     </Menu>
     </SidebarContent>
   </ProSidebar>

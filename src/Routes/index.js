@@ -8,6 +8,9 @@ import AddWorkingDays from '../WorkingDays/AddWorkingDays';
 
 //Subjects
 
+//Student
+import studentTBlist from '../Student/studentTimeTableList';
+import AddTimeTable from '../Student/addTimeTable';
 
 let routes = [
 
@@ -28,6 +31,18 @@ let routes = [
     name: "Add Working Days",
     component: AddWorkingDays,
     exact: true,
+  },
+  {
+    path: "/student/student_tb_list",
+    name: "Student",
+    component:studentTBlist,
+    exact:true,
+  },
+  {
+    path: "/student/add_timetable",
+    name: "Add Timetable",
+    component: AddTimeTable,
+    exact : true,
   },
 
 
