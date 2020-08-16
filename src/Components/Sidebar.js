@@ -27,12 +27,19 @@ const Sidebar = ({activemenu, submenu}) => {
         <MenuItem active={submenu === 'ADD_TIMESLOTS'}>Add Timeslots</MenuItem>
       </SubMenu>
 
-      <SubMenu title="Lecturers" icon={<FontAwesomeIcon icon={faAddressBook} />}>
-        <MenuItem active={true}>Days Groups</MenuItem>
+
+
+      <SubMenu active={activemenu === 'LECTURER'}  title="Lecturers" icon={<FontAwesomeIcon icon={faAddressBook} />}>
+        <MenuItem active={submenu === 'OVERVIEW_LECTURER'}>Overview</MenuItem>
+        <MenuItem active={submenu === 'ADD_LECTURER'}>Add Lecturer <Link to="/lecturer/add" /></MenuItem>
       </SubMenu>
 
+
+
+
       <SubMenu title="Subjects" icon={<FontAwesomeIcon icon={faAtom} />}>
-        <MenuItem active={true}>Days Groups</MenuItem>
+      <MenuItem active={submenu === 'OVERVIEW_SUBJECT'}>Overview</MenuItem>
+        <MenuItem active={submenu === 'ADD_SUBJECT'}>Add Subject</MenuItem>
       </SubMenu>
 
       <SubMenu  defaultOpen={activemenu === 'STUDENT'} title="Student" icon={<FontAwesomeIcon icon={faAddressBook} />}>
