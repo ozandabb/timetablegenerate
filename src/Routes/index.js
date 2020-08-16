@@ -5,7 +5,7 @@ import WorkingDaysList from '../WorkingDays/WorkingDaysList';
 import AddWorkingDays from '../WorkingDays/AddWorkingDays';
 
 //Lecturers
-
+import AddLecturer from '../Lecturer/Lecturer.Add'
 //Subjects
 
 //Student
@@ -44,6 +44,17 @@ let routes = [
     component: AddTimeTable,
     exact : true,
   },
+
+
+  // lecturer
+  {
+    path: "/lecturer/add",
+    name: "Add Lecturer",
+    component: AddLecturer,
+    exact : true,
+  },
+
+
 
 
 
