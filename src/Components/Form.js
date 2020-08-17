@@ -5,7 +5,7 @@ const FormInput =  props => {
     return(
       <div>
     <label className={`${props.error && 'text-danger'} form-label`}>{props.label}</label>
-    <input {...props} 
+    <input {...props}  
     placeholder={props.placeholder && !props.error ? props.placeholder : ''}
     className={`${props.error && 'error'} form-control form-control-sm`} 
     type={props.type ? props.type :'text'}></input>
@@ -41,7 +41,9 @@ const MultiFormSelect =  props => {
     <label className={`${props.error && 'text-danger'} form-label`}>{props.label}</label>
        
     <Select placeholder={props.placeholder ? props.placeholder : ''}
-     onChange={props.onChange}
+     onChange={props.onChange}  
+     isDisabled={props.isDisabled ? props.isDisabled : false }
+     defaultValue={props.defaultValue ? props.defaultValue : [] }
      options={props.options}  isMulti className={`${props.error && 'error'} form-multi`} />
 
     { props.error && <span className="error small text-danger">

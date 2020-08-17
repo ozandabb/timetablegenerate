@@ -3,6 +3,10 @@ import Dashboard from '../Dashboard';
 //WorkingDays
 import WorkingDaysList from '../WorkingDays/WorkingDaysList';
 import AddWorkingDays from '../WorkingDays/AddWorkingDays';
+import AddTimeslot from '../WorkingDays/AddTimeslot';
+import DeleteWorkingDays from '../WorkingDays/DeleteWorkingDays';
+import DeleteTimeslot from '../WorkingDays/DeleteTimeslot';
+import TimeslotsList from '../WorkingDays/TimeslotsList';
 
 //Lecturers
 import AddLecturer from '../Lecturer/Lecturer.Add'
@@ -33,6 +37,30 @@ let routes = [
     exact: true,
   },
   {
+    path: "/workingdays/timeslots/add",
+    name: "Add Timeslots",
+    component: AddTimeslot,
+    exact: true,
+  },
+  {
+    path: "/workingdays/delete",
+    name: "Delete Working Days",
+    component: DeleteWorkingDays,
+    exact: true,
+  },
+  {
+    path: "/workingdays/timeslots/delete",
+    name: "Delete Timeslot",
+    component: DeleteTimeslot,
+    exact: true,
+  },
+  {
+    path: "/workingdays/timeslots",
+    name: "Time Slots",
+    component: TimeslotsList,
+    exact: true,
+  },
+  {
     path: "/student/student_tb_list",
     name: "Student",
     component:studentTBlist,
@@ -53,9 +81,6 @@ let routes = [
     component: AddLecturer,
     exact : true,
   },
-
-
-
 
 
 ];

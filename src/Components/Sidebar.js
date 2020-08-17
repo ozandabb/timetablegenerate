@@ -24,7 +24,9 @@ const Sidebar = ({activemenu, submenu}) => {
         <MenuItem active={submenu === 'ADD_WORKING_DAYS'}>
           Add Working Days<Link to="/workingdays/add" />
         </MenuItem>
-        <MenuItem active={submenu === 'ADD_TIMESLOTS'}>Add Timeslots</MenuItem>
+        <MenuItem active={submenu === 'TIMESLOTS'}>
+          Timeslot Groups<Link to="/workingdays/timeslots" />
+        </MenuItem>
       </SubMenu>
 
 
