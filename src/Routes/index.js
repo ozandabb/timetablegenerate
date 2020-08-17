@@ -9,9 +9,12 @@ import DeleteTimeslot from '../WorkingDays/DeleteTimeslot';
 import TimeslotsList from '../WorkingDays/TimeslotsList';
 
 //Lecturers
-
+import AddLecturer from '../Lecturer/Lecturer.Add'
 //Subjects
 
+//Student
+import studentTBlist from '../Student/studentTimeTableList';
+import AddTimeTable from '../Student/addTimeTable';
 
 let routes = [
 
@@ -57,7 +60,27 @@ let routes = [
     component: TimeslotsList,
     exact: true,
   },
+  {
+    path: "/student/student_tb_list",
+    name: "Student",
+    component:studentTBlist,
+    exact:true,
+  },
+  {
+    path: "/student/add_timetable",
+    name: "Add Timetable",
+    component: AddTimeTable,
+    exact : true,
+  },
 
+
+  // lecturer
+  {
+    path: "/lecturer/add",
+    name: "Add Lecturer",
+    component: AddLecturer,
+    exact : true,
+  },
 
 
 ];

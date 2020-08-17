@@ -29,12 +29,30 @@ const Sidebar = ({activemenu, submenu}) => {
         </MenuItem>
       </SubMenu>
 
-      <SubMenu title="Lecturers" icon={<FontAwesomeIcon icon={faAddressBook} />}>
-        <MenuItem active={true}>Days Groups</MenuItem>
+
+
+      <SubMenu active={activemenu === 'LECTURER'}  title="Lecturers" icon={<FontAwesomeIcon icon={faAddressBook} />}>
+        <MenuItem active={submenu === 'OVERVIEW_LECTURER'}>Overview</MenuItem>
+        <MenuItem active={submenu === 'ADD_LECTURER'}>Add Lecturer <Link to="/lecturer/add" /></MenuItem>
       </SubMenu>
 
+
+
+
       <SubMenu title="Subjects" icon={<FontAwesomeIcon icon={faAtom} />}>
-        <MenuItem active={true}>Days Groups</MenuItem>
+      <MenuItem active={submenu === 'OVERVIEW_SUBJECT'}>Overview</MenuItem>
+        <MenuItem active={submenu === 'ADD_SUBJECT'}>Add Subject</MenuItem>
+      </SubMenu>
+
+      <SubMenu  defaultOpen={activemenu === 'STUDENT'} title="Student" icon={<FontAwesomeIcon icon={faAddressBook} />}>
+        <MenuItem 
+            active={submenu === 'STUDENT_TB_LIST'} >
+            Timetable List<Link to="/student/student_tb_list" />
+        </MenuItem>
+        <MenuItem active={submenu === 'ADD_STUDENT_TIMETABLE'}>
+          Add Timetable<Link to="/student/add_timetable" />
+        </MenuItem>
+        <MenuItem active={submenu === 'ADD_TIMESLOTS'}>Add Timeslots</MenuItem>
       </SubMenu>
 
     </Menu>
