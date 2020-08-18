@@ -52,7 +52,12 @@ const Sidebar = ({activemenu, submenu}) => {
         <MenuItem active={submenu === 'ADD_STUDENT_TIMETABLE'}>
           Add Timetable<Link to="/student/add_timetable" />
         </MenuItem>
-        <MenuItem active={submenu === 'ADD_TIMESLOTS'}>Add Timeslots</MenuItem>
+        <MenuItem active={submenu === 'GENERATE_SUBGROUP'}>
+          Generate Subgroup<Link to="/student/GenerateSubgroup" />
+        </MenuItem>
+        <MenuItem active={submenu === 'CONSECUTIVE_SESSION'}>
+        Consecutive Sessions<Link to="/student/consecutiveSessions" />
+        </MenuItem>
       </SubMenu>
 
     </Menu>

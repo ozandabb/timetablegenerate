@@ -15,6 +15,10 @@ import AddLecturer from '../Lecturer/Lecturer.Add'
 //Student
 import studentTBlist from '../Student/studentTimeTableList';
 import AddTimeTable from '../Student/addTimeTable';
+import DeleteStudentslot from '../Student/deleteStudentSlot';
+import GenerateSubgroup from '../Student/GenerateSubgroup';
+import consecutiveSessions from '../Student/consecutiveSessions';
+import addconsecutiveSessions from '../Student/addConSessions';
 
 let routes = [
 
@@ -60,6 +64,8 @@ let routes = [
     component: TimeslotsList,
     exact: true,
   },
+
+  // Student
   {
     path: "/student/student_tb_list",
     name: "Student",
@@ -70,6 +76,30 @@ let routes = [
     path: "/student/add_timetable",
     name: "Add Timetable",
     component: AddTimeTable,
+    exact : true,
+  },
+  {
+    path: "/student/delete_student_slot",
+    name: "Delete Student Slot",
+    component: DeleteStudentslot,
+    exact : true,
+  },
+  {
+    path: "/student/GenerateSubgroup",
+    name: "Generate Sub group",
+    component: GenerateSubgroup,
+    exact : true,
+  },
+  {
+    path: "/student/consecutiveSessions",
+    name: "consecutive Sessions",
+    component: consecutiveSessions,
+    exact : true,
+  },
+  {
+    path: "/student/addconsecutiveSessions",
+    name: "Add consecutive Sessions",
+    component: addconsecutiveSessions,
     exact : true,
   },
 
